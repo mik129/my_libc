@@ -8,5 +8,5 @@ my_strlen(const char *s)
     n = 0;
     while (s[n] != '\0')
         n++;
-    return n; 
+    return n;
 }
