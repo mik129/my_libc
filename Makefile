@@ -1,21 +1,22 @@
 NAME = my_libc.a
 
-SRC = \
-    my_strlen.c
-
-OBJ = $(SRC:.c=.o)
-
-CFLAGS = -Wall -Wextra -Werror
+SRCS = $(wildcard *.c)
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-    ar rcs $(NAME) $(OBJ)
+$(NAME): $(OBJS)
+ ar rcs $(NAME) $(OBJS)
+
+%.o: %.c my_libc.h
+ cc -Wall -Wextra -Werror -c $< -o $@
 
 clean:
-    rm -f $(OBJ)
+ rm -f $(OBJS)
 
 fclean: clean
-    rm -f $(NAME)
+ rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
