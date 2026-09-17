@@ -3,11 +3,11 @@
 size_t
 my_strlen(const char *s)
 {
-    size_t n;
+ size_t compteur = 0;
 
-    n = 0;
-    while (s[n] != '\0') {
-        n++;
-    }
-    return n;
+ while (*s != '\0') {
+ compteur += 1;
+ s++;
+ }
+ return compteur;
 }
