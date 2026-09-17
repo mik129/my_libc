@@ -10,3 +10,4 @@ my_strlen(const char *s)
 		n++;
 	return n;
 }
+rrrr
