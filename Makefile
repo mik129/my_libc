@@ -6,7 +6,8 @@ CFLAGS = -Wall -Wextra -Werror -std=c11
 SRCS = my_strlen.c \
        my_strcpy.c \
        my_strncpy.c \
-       my_strcat.c
+       my_strcat.c \
+       my_strncat.c
 
 OBJS = $(SRCS:.c=.o)
 
