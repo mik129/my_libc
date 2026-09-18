@@ -3,11 +3,10 @@
 size_t
 my_strlen(const char *s)
 {
- size_t compteur = 0;
+	const char *p;
 
- while (*s != '\0') {
- compteur += 1;
- s++;
- }
- return compteur;
+	p = s;
+	while (*p != '\0')
+		p++;
+	return (size_t)(p - s);
 }
