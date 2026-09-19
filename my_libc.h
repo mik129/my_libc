@@ -10,5 +10,7 @@ char	*my_strcat(char *dst, const char *src);
 char	*my_strncat(char *dst, const char *src, size_t n);
 int	 my_strcmp(const char *s1, const char *s2);
 int	 my_strncmp(const char *s1, const char *s2, size_t n);
+char	*my_strchr(const char *s, int c);
 
 #endif
+
