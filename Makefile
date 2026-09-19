@@ -8,7 +8,8 @@ SRCS = my_strlen.c \
        my_strncpy.c \
        my_strcat.c \
        my_strncat.c \
-       my_strcmp.c
+       my_strcmp.c \
+       my_strncmp.c
 
 OBJS = $(SRCS:.c=.o)
 
