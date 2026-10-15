@@ -15,5 +15,6 @@ char	*my_strrchr(const char *s, int c);
 char	*my_strstr(const char *haystack, const char *needle);
 void	*my_memset(void *b, int c, size_t len);
 void	*my_memcpy(void *dst, const void *src, size_t len);
+void	*my_memmove(void *dst, const void *src, size_t len);
 
 #endif
