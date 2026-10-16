@@ -19,7 +19,8 @@ SRCS = my_strlen.c \
        my_memcmp.c \
        my_memchr.c \
        my_strdup.c \
-       my_strtok.c
+       my_strtok.c \
+       my_strlcpy.c
 
 OBJS = $(SRCS:.c=.o)
 

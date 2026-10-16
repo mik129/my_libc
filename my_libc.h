@@ -20,5 +20,6 @@ int	 my_memcmp(const void *b1, const void *b2, size_t len);
 void	*my_memchr(const void *b, int c, size_t len);
 char	*my_strdup(const char *s);
 char	*my_strtok(char *str, const char *delim);
+size_t	 my_strlcpy(char *dst, const char *src, size_t dstsize);
 
 #endif
