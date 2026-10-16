@@ -21,5 +21,6 @@ void	*my_memchr(const void *b, int c, size_t len);
 char	*my_strdup(const char *s);
 char	*my_strtok(char *str, const char *delim);
 size_t	 my_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t	 my_strlcat(char *dst, const char *src, size_t dstsize);
 
 #endif
