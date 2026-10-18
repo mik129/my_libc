@@ -26,5 +26,6 @@ void	 my_explicit_bzero(void *buf, size_t len);
 void	*my_reallocarray(void *ptr, size_t nmemb, size_t size);
 int	 my_isalpha(int c);
 int	 my_isdigit(int c);
+int	 my_isalnum(int c);
 
 #endif
