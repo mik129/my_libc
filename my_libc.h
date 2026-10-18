@@ -24,5 +24,6 @@ size_t	 my_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	 my_strlcat(char *dst, const char *src, size_t dstsize);
 void	 my_explicit_bzero(void *buf, size_t len);
 void	*my_reallocarray(void *ptr, size_t nmemb, size_t size);
+int	 my_isalpha(int c);
 
 #endif
