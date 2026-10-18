@@ -22,5 +22,6 @@ char	*my_strdup(const char *s);
 char	*my_strtok(char *str, const char *delim);
 size_t	 my_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	 my_strlcat(char *dst, const char *src, size_t dstsize);
+void	 my_explicit_bzero(void *buf, size_t len);
 
 #endif
