@@ -27,7 +27,8 @@ SRCS = my_strlen.c \
        my_isalpha.c \
        my_isdigit.c \
        my_isalnum.c \
-       my_isspace.c
+       my_isspace.c \
+       my_isprint.c
 
 OBJS = $(SRCS:.c=.o)
 
