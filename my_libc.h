@@ -33,5 +33,6 @@ int	 my_toupper(int c);
 int	 my_tolower(int c);
 size_t	 my_strnlen(const char *s, size_t maxlen);
 int	 my_atoi(const char *nptr);
+long	 my_strtol(const char *nptr, char **endptr, int base);
 
 #endif
