@@ -1,13 +1,40 @@
-NAME	= my_libc.a
-SRCS	= my_strlen.c my_strcpy.c my_strncpy.c my_strcat.c my_strncat.c \
-	  my_strcmp.c my_strncmp.c my_strchr.c my_strrchr.c my_strstr.c \
-	  my_memset.c my_memcpy.c my_memmove.c my_memcmp.c my_memchr.c \
-	  my_strdup.c my_strtok.c my_strlcpy.c my_strlcat.c my_explicit_bzero.c \
-	  my_reallocarray.c my_isalpha.c my_isdigit.c my_isalnum.c my_isspace.c \
-	  my_isprint.c my_toupper.c my_tolower.c my_strnlen.c
-OBJS	= $(SRCS:.c=.o)
-CC	= cc
-CFLAGS	= -Wall -Wextra -Werror
+NAME = my_libc.a
+
+CC = cc
+CFLAGS = -Wall -Wextra -Werror -std=c11
+
+SRCS = my_strlen.c \
+       my_strcpy.c \
+       my_strncpy.c \
+       my_strcat.c \
+       my_strncat.c \
+       my_strcmp.c \
+       my_strncmp.c \
+       my_strchr.c \
+       my_strrchr.c \
+       my_strstr.c \
+       my_memset.c \
+       my_memcpy.c \
+       my_memmove.c \
+       my_memcmp.c \
+       my_memchr.c \
+       my_strdup.c \
+       my_strtok.c \
+       my_strlcpy.c \
+       my_strlcat.c \
+       my_explicit_bzero.c \
+       my_reallocarray.c \
+       my_isalpha.c \
+       my_isdigit.c \
+       my_isalnum.c \
+       my_isspace.c \
+       my_isprint.c \
+       my_toupper.c \
+       my_tolower.c \
+       my_strnlen.c \
+       my_atoi.c
+
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
