@@ -32,7 +32,8 @@ SRCS = my_strlen.c \
        my_toupper.c \
        my_tolower.c \
        my_strnlen.c \
-       my_atoi.c
+       my_atoi.c \
+       my_strtol.c
 
 OBJS = $(SRCS:.c=.o)
 
